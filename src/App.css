@@ -1,38 +1,106 @@
-.App {
-  text-align: center;
+body {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    background: #9b4905;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.dogs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    flex-direction: column;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.dogs .img {
+    width: 200px;
+    padding: .54rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.8);
+    text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.dogs img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.container {
+    width: 550px;
+    background: #fff;
+    max-width: 100%;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1 {
+    font-size: 2.7652rem;
+    font-weight: 600;
+    color: #fff;
+
+}
+
+.container .btn {
+    padding: 0.67rem 1.12rem;
+    background: transparent;
+    border: 0;
+    outline: none;
+    border: 2px solid #6d3507;
+    font-size: .9798rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    border-radius: 6px;
+    margin-bottom: 1.45rem;
+    color: #6d3507;
+    letter-spacing: 1px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container .btn:hover {
+    background: #6d3507;
+    color: #fff;
+}
+
+.container p {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #6d3507;
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container span {
+    font-size: .8375rem;
+    font-weight: 500px;
+    color: #838282;
+    font-family: sans-serif;
+    text-transform: capitalize;
+}
+
+@media(max-width:767px) {
+    h1 {
+        font-size: 1.7687rem;
+    }
+
+    .container {
+        width: auto;
+    }
+
+    .dogs .img {
+        width: 165px;
+    }
+
+    .dogs img {
+        width: 165px;
+        height: 165px;
+    }
 }
